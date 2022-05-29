@@ -16,3 +16,8 @@ screenshot of the actual jobber website.
 !["screenshot of new product added to database"](https://github.com/BBrandford11/jobbing/blob/master/public/assets/jobber.png?raw=true)
 
 
+## Some small things I would like to work on in the future would be
+- I got most of the hover effects to match but the underline needs some work on the navigation bar.
+- The Try Jobbing button needs more time
+- The down arrow was not the same but used a similar font awesome that was similar 
+- Would love to figure out the tearing effect on the bottom section
