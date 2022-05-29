@@ -1,0 +1,11 @@
+.mainPageBody{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.photo1{
+ height: 70vh; 
+ width: 50vw;
+ margin-top: 25px;
+}
