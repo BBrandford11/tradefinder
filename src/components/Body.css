@@ -28,9 +28,27 @@ margin-left: 8em;
   width: 15em;
   height: 4em;
 }
+.mainPageBody1-free{
+  width: 14em;
+  height: 5em;
+  margin-top: 1em ;
+  background-color: #7db00e;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.mainPageBody1-arrow{
+  height: 5em;
+  margin-top: 2em;
+  color: #012939;
+}
+
+
 
 .photo1{
  height: 70vh; 
- width: 50vw;
+ width: 45vw;
  margin-top: 25px;
 }
