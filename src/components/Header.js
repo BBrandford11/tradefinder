@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignIn} from "@fortawesome/free-solid-svg-icons"
+
 import "./Header.css";
 
 function Header() {
@@ -8,7 +11,8 @@ function Header() {
         <p id="header-words-1" className="header-words"> Save Now</p>
       </div>
       <div className="header-right">
-        <p className="header-words">Log in</p>
+        <p className="header-words">Log in  <FontAwesomeIcon icon={faSignIn} /></p>
+        
       </div>
     </div>
   );
