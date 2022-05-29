@@ -1,8 +1,14 @@
 .mainPageBody{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
+.top{
+  display: flex;
+}
+.mainPageBody1{
+  position: relative;
+}
 .mainPageBody1-right {
 
 text-align: left;
@@ -45,6 +51,36 @@ margin-left: 8em;
   color: #012939;
 }
 
+.mainPageBody1-name{
+  position: absolute;
+  top: 29em;
+  color: white;
+  text-align: left;
+  margin-left: 2em;
+
+  
+}
+.qwe{
+  font-size: 200%;
+  font-weight: 900;
+}
+.asd{
+  font-size: 140%;
+  font-style: italic;
+
+}
+
+.mainPageBody2{
+  width: 100%;
+  background-color: #012939;
+  color: white;
+  height: 20em;
+}
+
+.mainPageBody2-content{
+  font-size: 250%;
+  font-weight: 900;
+}
 
 
 .photo1{
