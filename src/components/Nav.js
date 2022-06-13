@@ -1,11 +1,11 @@
 import "./Nav.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faAngleDown } from "@fortawesome/free-solid-svg-icons"
-function Nav() {
+function Nav(props) {
   return <div className="navbar">
     <div className="nav-content">
-    <p className="nav-content-logo">Jobbing logo</p>
-    <p className="nav-content-dropdowns">Why Jobbing?</p>
+    <p className="nav-content-logo">{props.name} logo</p>
+    <p className="nav-content-dropdowns">Why {props.name}?</p>
     <p className="nav-content-dropdowns">Features <FontAwesomeIcon icon={faAngleDown} /> </p>
     <p className="nav-content-dropdowns">Industries <FontAwesomeIcon icon={faAngleDown} /> </p>
     <p className="nav-content-dropdowns">Pricing</p>

@@ -3,7 +3,7 @@ import { faSignIn} from "@fortawesome/free-solid-svg-icons"
 
 import "./Header.css";
 
-function Header() {
+function Header(props) {
   return (
     <div className="header">
       <div className="header-left">

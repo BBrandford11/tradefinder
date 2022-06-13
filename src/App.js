@@ -4,11 +4,12 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 
 function App() {
+  const name = "Trade Finder"
   return (
     <div className="App">
-      <Header/>
-      <Nav />
-      <Body />
+      <Header name={name}/>
+      <Nav name={name}/>
+      <Body name={name}/>
     </div>
   );
 }
