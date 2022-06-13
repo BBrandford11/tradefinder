@@ -27,6 +27,7 @@ function Body(props) {
             Manage your business and back-and-forth with customers from one
             place. Estimate, quote, schedule, invoice, get paid—no software
             experience required.
+            
           </p>
           <input
             className=" mainPageBody1-input"
