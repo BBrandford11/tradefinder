@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./Map.css";
 
-function Map() {
+function Map(props) {
   return (
     <div id="map">
       <MapContainer center={[51.0447, -114.0719]} zoom={10} scrollWheelZoom={true}>
@@ -14,6 +14,14 @@ function Map() {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
+        {props.data.map((site)=>{
+          return (
+            // console.log(typeof [site.lat.$numberDecimal,  site.lng.$numberDecimal])
+            <Marker 
+            key={site._id}
+            position={[site.lat.$numberDecimal,  site.lng.$numberDecimal]} />
+          )
+        })}
       </MapContainer>
     </div>
   );

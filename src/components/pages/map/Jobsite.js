@@ -1,5 +1,5 @@
-function JobSite() {
-  return ( <h1>job</h1> );
+function JobSite(props) {
+  return <div>job</div>;
 }
 
 export default JobSite;

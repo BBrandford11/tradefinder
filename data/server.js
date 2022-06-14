@@ -2,11 +2,18 @@ require('dotenv').config()
 const express = require("express");
 const { MongoClient } = require("mongodb");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const app = express();
 const PORT = 3002;
 
+const corsOptions = {
+  origin: "http://localhost:3000",
+  optionsSuccessStatus: 200,
+};
+
+
 // middleware
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json({ extended: true }));
 
@@ -16,12 +23,28 @@ const uri = `mongodb+srv://${REACT_APP_MONGODBUSER}:${REACT_APP_MONGODBPASSWORD}
 
 const client = new MongoClient(uri);
 
-app.get("/", function (req, res) {
+app.get("/users", function (req, res) {
   MongoClient.connect(uri, function (err, db) {
     if (err) throw err;
     var dbo = db.db("tradefinder");
     dbo
       .collection("user")
+      .find({})
+      .toArray(function (err, result) {
+        if (err) throw err;
+        console.log(result);
+        res.send(result);
+        db.close();
+      });
+  });
+});
+
+app.get("/jobsites", function (req, res) {
+  MongoClient.connect(uri, function (err, db) {
+    if (err) throw err;
+    var dbo = db.db("tradefinder");
+    dbo
+      .collection("jobsites")
       .find({})
       .toArray(function (err, result) {
         if (err) throw err;
