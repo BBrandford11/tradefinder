@@ -1,8 +1,11 @@
-.jobsites {
+.jobsite {
   outline: 2px solid black;
   margin-bottom: 10px;
+  display: flex;
 }
 
 .photo {
+  display: flex;
+  
   max-width: 13em;
 }
