@@ -27,6 +27,7 @@ function Map(props) {
               >
               <Popup>
                 <h3>{site.address}</h3>
+                <h3>{site._id}</h3>
               </Popup>
             </Marker>
           );
