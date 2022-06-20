@@ -18,12 +18,18 @@ function Map(props) {
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
-        {props.data.map((site) => {
+        {props.data.map((site, index) => {
           return (
             // console.log(typeof [site.lat.$numberDecimal,  site.lng.$numberDecimal])
             <Marker
               key={site._id}
               position={[site.lat.$numberDecimal, site.lng.$numberDecimal]}
+              eventHandlers={{
+                click: (e) => {
+                  props.setSelectedIndex(index)
+                },
+              }}
+              // onClick={() => props.setSelectedIndex(index)}
               >
               <Popup>
                 <h3>{site.address}</h3>

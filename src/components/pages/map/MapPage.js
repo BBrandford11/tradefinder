@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 function MapPage() {
   const [jobs, setJobs] = useState([]);
   // const [selected,setSelected] = useState("")
+  const [selectedIndex, setSelectedIndex] = useState('')
 
   useEffect(() => {
     fetch("http://localhost:3002/jobsites")
@@ -15,8 +16,8 @@ function MapPage() {
 
   return (
     <div className="body">
-      <ListOfJobs data={jobs} />
-      <Map data={jobs} />
+      <ListOfJobs setSelectedIndex={setSelectedIndex} selectedIndex={selectedIndex} data={jobs} />
+      <Map data={jobs}  setSelectedIndex={setSelectedIndex}/>
     </div>
   );
 }

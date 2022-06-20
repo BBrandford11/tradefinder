@@ -1,8 +1,8 @@
 import "./Jobsite.css";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 function JobSite(props) {
-  const [selected, setSelected] = useState("62a7c0cb1acd64825bc77889");
-  const [selectedIndex, setSelectedIndex] = useState('')
+  // const [selected, setSelected] = useState("62a7c0cb1acd64825bc77889");
+  // const [selectedIndex, setSelectedIndex] = useState('')
 
   // function handleClick(jobs) {
   //   console.log(jobs._id);
@@ -18,9 +18,12 @@ function JobSite(props) {
         return (
           <div
             className={"jobsite"}
-            style={{ background: index === selectedIndex ? 'red' : 'rgb(207, 204, 204)'}}
+            style={{
+               background: index === props.selectedIndex ? 'rgb(121, 117, 117)' : 'rgb(207, 204, 204)',
+
+              }}
             key={jobs._id}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => props.setSelectedIndex(index)}
           >
             <div className="photo">
               <img className="photo" src={jobs.photo} alt="Italian Trulli" />
