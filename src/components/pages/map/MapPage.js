@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 function MapPage() {
   const [jobs, setJobs] = useState([]);
-  const [selected,setSelected] = useState("")
+  // const [selected,setSelected] = useState("")
 
   useEffect(() => {
     fetch("http://localhost:3002/jobsites")
