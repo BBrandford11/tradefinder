@@ -33,7 +33,7 @@ function Map(props) {
               >
               <Popup>
                 <h3>{site.address}</h3>
-                <h3>{site._id}</h3>
+                <img className="photo" src={site.photo} alt="Italian Trulli" />
               </Popup>
             </Marker>
           );

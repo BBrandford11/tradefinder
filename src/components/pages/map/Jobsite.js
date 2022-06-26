@@ -21,6 +21,7 @@ function JobSite(props) {
             style={{
                background: index === props.selectedIndex ? 'rgb(121, 117, 117)' : 'rgb(207, 204, 204)',
 
+
               }}
             key={jobs._id}
             onClick={() => props.setSelectedIndex(index)}

@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my a excercise to copy a local company's main page to practice front end and css. The company I coppied is call jobber (https://getjobber.com/#check-it-out) and was only doing this for learing purposes.
+This is my a excercise to combine and practice retrieving and submitting to MongoDB. The app could be used to allow trade workers to view and bid on local construction jobs. I created the map using the Leafley api and populated the markers for each jobsite location from the database.
 
 ## Authors
 - [Bryce Brandford](https://github.com/BBrandford11)
@@ -17,7 +17,6 @@ screenshot of the actual jobber website.
 
 
 ## Some small things I would like to work on in the future would be
-- I got most of the hover effects to match but the underline needs some work on the navigation bar.
-- The Try Jobbing button needs more time
-- The down arrow was not the same but used a similar font awesome that was similar 
-- Would love to figure out the tearing effect on the bottom section
+- Clean up the css on map page
+- able to view all trades workers and there qualifications
+- integrate different filters for markers 
