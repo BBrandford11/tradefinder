@@ -11,7 +11,7 @@ This is my a excercise to combine and practice retrieving and submitting to Mong
 
 ## Screenshots
 screenshot of the map of all local jobsites for trade workers to bid on.
-!["screenshot of new product added to database"](https://github.com/BBrandford11/tradefinder/blob/master/public/assets/jobsites/mapping.png?raw=true)
+!["screenshot of new  product added to database"](https://github.com/BBrandford11/tradefinder/blob/master/public/assets/jobsites/mapping.png?raw=true)
 screenshot of my version of the jobber app.
 !["screenshot of creating main page showing new product creation."](https://github.com/BBrandford11/jobbing/blob/master/public/assets/mainpage.png?raw=true)
 
